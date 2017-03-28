@@ -78,6 +78,13 @@ int main(int argc, char* argv[]) {
   // the second argument back to 10 when you are done
   // testing.
   // Answer:
+  //	--If the value is set 11 then the first array is filled
+  //		with 11 values
+  //	--If the value is set to 100 then the first array is filled
+  //		with 100 values
+  //	--If the value is set to 1000 then the first array is filled
+  //		with 1000 values
+  //
   fillArray(array, 10);
 
   int value;
@@ -89,7 +96,10 @@ int main(int argc, char* argv[]) {
   // TODO(2): We can actually use the address of the value
   // declared here as if it were an array of a single
   // element; why is this possible?
-  // Answer:
+  // Answer: It is possible because the address is a pointer
+  //		to an array.
+  //
+  //
   fillArray(&value, 1);
   // fillArray should set value to 0 * 3 + 2 = 2.
   assert(value == 2);
